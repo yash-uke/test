@@ -1,0 +1,24 @@
+git pull versus git fetch
+
+___________________________
+a. git pull
+
+-> Downloads changes from the remote repository (e.g., GitHub, GitLab) to the local repository.
+-> Automatically merges the fetched changes into your current working branch.
+-> May cause merge conflicts if there are conflicting change
+
+Example:
+git pull
+_______________
+
+b. git fetch
+_______________
+-> Downloads the latest changes from the remote repository but does not merge them into your working branch.
+-> This is a safe operation because it allows you to review the changes before merging.
+-> The fetched changes are stored in origin/<branch>, and you can manually merge them when ready.
+
+Example:
+git fetch
+git merge
+
+
